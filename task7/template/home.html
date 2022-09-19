@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block title %}Home{% endblock %}
+    {% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Newspaper APP</h1>
+        <p class="lead"> A Newspaper website built with Django.</p>
+        <p class="lead">
+            <a href="{% url 'article_list' %}" role="button" class="btn btn-primary btn-lg">View article</a>
+        </p>
+    </div>
+    {% endblock content %}
+</body>
+</html>
